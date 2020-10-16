@@ -48,6 +48,21 @@ namespace XMLWeather
             //display clock
             dateLabel.Text = DateTime.Now.ToString("hh:mm tt");
 
+            //display tomorrow conditions
+            tmrwCondLabel.Text = Form1.days[1].condition;
+
+            //display day after tomorrow
+            nextDayLabel.Text = DateTime.Now.AddDays(2).ToString("dddd");
+            day2CondLabel.Text = Form1.days[2].condition;
+
+            //display next day after 
+            finalDayLabel.Text = DateTime.Now.AddDays(3).ToString("dddd");
+            day3CondLabel.Text = Form1.days[3].condition;
+
+            //picture boxes
+
+
+
 
         }
 

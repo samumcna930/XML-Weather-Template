@@ -43,14 +43,14 @@
             this.conditionLabel = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
             this.tomorrowLabel = new System.Windows.Forms.Label();
-            this.nextDayLabel = new System.Windows.Forms.Label();
             this.finalDayLabel = new System.Windows.Forms.Label();
+            this.nextDayLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tomorrowTempLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.tmrwCondLabel = new System.Windows.Forms.Label();
+            this.day2CondLabel = new System.Windows.Forms.Label();
+            this.day3CondLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -113,9 +113,9 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Yu Gothic UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Aqua;
-            this.minOutput.Location = new System.Drawing.Point(41, 158);
+            this.minOutput.Location = new System.Drawing.Point(41, 168);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(115, 52);
+            this.minOutput.Size = new System.Drawing.Size(105, 52);
             this.minOutput.TabIndex = 43;
             this.minOutput.Text = "123";
             this.minOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,9 +125,9 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.OrangeRed;
-            this.maxOutput.Location = new System.Drawing.Point(340, 158);
+            this.maxOutput.Location = new System.Drawing.Point(345, 168);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(115, 51);
+            this.maxOutput.Size = new System.Drawing.Size(110, 51);
             this.maxOutput.TabIndex = 44;
             this.maxOutput.Text = "123";
             this.maxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -185,9 +185,9 @@
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
-            this.conditionLabel.Location = new System.Drawing.Point(88, 109);
+            this.conditionLabel.Location = new System.Drawing.Point(47, 109);
             this.conditionLabel.Name = "conditionLabel";
-            this.conditionLabel.Size = new System.Drawing.Size(310, 49);
+            this.conditionLabel.Size = new System.Drawing.Size(387, 49);
             this.conditionLabel.TabIndex = 49;
             this.conditionLabel.Text = "Sunny";
             this.conditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,29 +209,29 @@
             this.tomorrowLabel.TabIndex = 50;
             this.tomorrowLabel.Text = "Tomorrow";
             // 
-            // nextDayLabel
-            // 
-            this.nextDayLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nextDayLabel.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextDayLabel.ForeColor = System.Drawing.Color.White;
-            this.nextDayLabel.Location = new System.Drawing.Point(335, 485);
-            this.nextDayLabel.Name = "nextDayLabel";
-            this.nextDayLabel.Size = new System.Drawing.Size(171, 53);
-            this.nextDayLabel.TabIndex = 51;
-            this.nextDayLabel.Text = "Thursday";
-            this.nextDayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // finalDayLabel
             // 
             this.finalDayLabel.BackColor = System.Drawing.Color.Transparent;
-            this.finalDayLabel.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalDayLabel.Font = new System.Drawing.Font("Myanmar Text", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finalDayLabel.ForeColor = System.Drawing.Color.White;
-            this.finalDayLabel.Location = new System.Drawing.Point(162, 485);
+            this.finalDayLabel.Location = new System.Drawing.Point(326, 484);
             this.finalDayLabel.Name = "finalDayLabel";
-            this.finalDayLabel.Size = new System.Drawing.Size(168, 53);
-            this.finalDayLabel.TabIndex = 52;
-            this.finalDayLabel.Text = "Wednesday";
+            this.finalDayLabel.Size = new System.Drawing.Size(178, 53);
+            this.finalDayLabel.TabIndex = 51;
+            this.finalDayLabel.Text = "Thursday";
             this.finalDayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // nextDayLabel
+            // 
+            this.nextDayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nextDayLabel.Font = new System.Drawing.Font("Myanmar Text", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextDayLabel.ForeColor = System.Drawing.Color.White;
+            this.nextDayLabel.Location = new System.Drawing.Point(162, 485);
+            this.nextDayLabel.Name = "nextDayLabel";
+            this.nextDayLabel.Size = new System.Drawing.Size(176, 53);
+            this.nextDayLabel.TabIndex = 52;
+            this.nextDayLabel.Text = "Wednesday";
+            this.nextDayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
             // 
@@ -260,41 +260,41 @@
             this.pictureBox3.TabIndex = 55;
             this.pictureBox3.TabStop = false;
             // 
-            // tomorrowTempLabel
+            // tmrwCondLabel
             // 
-            this.tomorrowTempLabel.BackColor = System.Drawing.Color.Transparent;
-            this.tomorrowTempLabel.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tomorrowTempLabel.ForeColor = System.Drawing.Color.White;
-            this.tomorrowTempLabel.Location = new System.Drawing.Point(27, 611);
-            this.tomorrowTempLabel.Name = "tomorrowTempLabel";
-            this.tomorrowTempLabel.Size = new System.Drawing.Size(100, 37);
-            this.tomorrowTempLabel.TabIndex = 56;
-            this.tomorrowTempLabel.Text = "label1";
-            this.tomorrowTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tmrwCondLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tmrwCondLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tmrwCondLabel.ForeColor = System.Drawing.Color.White;
+            this.tmrwCondLabel.Location = new System.Drawing.Point(3, 608);
+            this.tmrwCondLabel.Name = "tmrwCondLabel";
+            this.tmrwCondLabel.Size = new System.Drawing.Size(168, 37);
+            this.tmrwCondLabel.TabIndex = 56;
+            this.tmrwCondLabel.Text = "label1";
+            this.tmrwCondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // day2CondLabel
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(201, 611);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 37);
-            this.label2.TabIndex = 57;
-            this.label2.Text = "label2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.day2CondLabel.BackColor = System.Drawing.Color.Transparent;
+            this.day2CondLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day2CondLabel.ForeColor = System.Drawing.Color.White;
+            this.day2CondLabel.Location = new System.Drawing.Point(162, 608);
+            this.day2CondLabel.Name = "day2CondLabel";
+            this.day2CondLabel.Size = new System.Drawing.Size(168, 37);
+            this.day2CondLabel.TabIndex = 57;
+            this.day2CondLabel.Text = "label2";
+            this.day2CondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // day3CondLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(370, 611);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 34);
-            this.label3.TabIndex = 58;
-            this.label3.Text = "label3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.day3CondLabel.BackColor = System.Drawing.Color.Transparent;
+            this.day3CondLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day3CondLabel.ForeColor = System.Drawing.Color.White;
+            this.day3CondLabel.Location = new System.Drawing.Point(336, 608);
+            this.day3CondLabel.Name = "day3CondLabel";
+            this.day3CondLabel.Size = new System.Drawing.Size(168, 37);
+            this.day3CondLabel.TabIndex = 58;
+            this.day3CondLabel.Text = "label3";
+            this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CurrentScreen
             // 
@@ -305,14 +305,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.tomorrowTempLabel);
+            this.Controls.Add(this.day3CondLabel);
+            this.Controls.Add(this.day2CondLabel);
+            this.Controls.Add(this.tmrwCondLabel);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.finalDayLabel);
             this.Controls.Add(this.nextDayLabel);
+            this.Controls.Add(this.finalDayLabel);
             this.Controls.Add(this.tomorrowLabel);
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.humidityLabel);
@@ -348,13 +348,13 @@
         private System.Windows.Forms.Label conditionLabel;
         private System.Windows.Forms.Timer clockTimer;
         private System.Windows.Forms.Label tomorrowLabel;
-        private System.Windows.Forms.Label nextDayLabel;
         private System.Windows.Forms.Label finalDayLabel;
+        private System.Windows.Forms.Label nextDayLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label tomorrowTempLabel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label tmrwCondLabel;
+        private System.Windows.Forms.Label day2CondLabel;
+        private System.Windows.Forms.Label day3CondLabel;
     }
 }

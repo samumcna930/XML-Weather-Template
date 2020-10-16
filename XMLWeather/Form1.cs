@@ -42,11 +42,13 @@ namespace XMLWeather
 
 
                 reader.ReadToFollowing("symbol");
-                d.condition = reader.GetAttribute("number");
+                d.conditionNumber = reader.GetAttribute("number");
+                d.condition = reader.GetAttribute("name");
 
                 reader.ReadToFollowing("temperature");
                 d.tempHigh = reader.GetAttribute("max");
                 d.tempLow = reader.GetAttribute("min");
+
 
                 //TODO: if day object not null add to the days list
                 days.Add(d);

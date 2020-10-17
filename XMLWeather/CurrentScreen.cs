@@ -59,7 +59,14 @@ namespace XMLWeather
             finalDayLabel.Text = DateTime.Now.AddDays(3).ToString("dddd");
             day3CondLabel.Text = Form1.days[3].condition;
 
-            //picture boxes
+            //image in background
+            int conditionNumber = Convert.ToInt32(Form1.days[0].conditionNumber);
+            if (conditionNumber == 800)
+            {
+                //backgroundPicture.Image = Properties.Resources.SunnyBackGround;
+            }
+            //picture boxes backgroundPicture.Image = Properties.Resources.insidecabin;
+            //backgroundPicture.BackgroundImageLayout = ImageLayout.Zoom;
 
 
 

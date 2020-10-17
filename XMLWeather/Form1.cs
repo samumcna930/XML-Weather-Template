@@ -80,6 +80,7 @@ namespace XMLWeather
             days[0].windSpeed = reader.GetAttribute("name");
 
             reader.ReadToFollowing("weather");
+            days[0].conditionNumber = reader.GetAttribute("number");
             days[0].condition = reader.GetAttribute("value");
 
         }

@@ -12,7 +12,7 @@ namespace XMLWeather
 
         public Day()
         {
-            feelsLikeTemp = date = currentTemp = currentTime = condition = conditionNumber = location = tempHigh = tempLow
+            feelsLikeTemp = date = currentTemp = currentTime = condition = location = tempHigh = tempLow
                 = windSpeed = windDirection = humidity = visibility = "";
         }
     }

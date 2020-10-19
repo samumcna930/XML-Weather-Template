@@ -14,6 +14,26 @@ namespace XMLWeather
         public CurrentScreen()
         {
             InitializeComponent();
+            #region Parent section
+            //To allow the labels to be transparents to the picture box image instead of the screen image
+            cityOutput.Parent = background;
+            tempOutput.Parent = background;
+            minOutput.Parent = background;
+            maxOutput.Parent = background;
+            feelsLikeLabel.Parent = background;
+            conditionLabel.Parent = background;
+            windSpeedLabel.Parent = background;
+            humidityLabel.Parent = background;
+            dateLabel.Parent = background;
+            tmrwCondLabel.Parent = background;
+            nextDayLabel.Parent = background;
+            day2CondLabel.Parent = background;
+            finalDayLabel.Parent = background;
+            day3CondLabel.Parent = background;
+            tomorrowLabel.Parent = background;
+            forecastLabel.Parent = background;
+            underlineLabel.Parent = background;
+            #endregion
             DisplayCurrent();
         }
 
@@ -59,14 +79,31 @@ namespace XMLWeather
             finalDayLabel.Text = DateTime.Now.AddDays(3).ToString("dddd");
             day3CondLabel.Text = Form1.days[3].condition;
 
-            //image in background
+            //weather number
             int conditionNumber = Convert.ToInt32(Form1.days[0].conditionNumber);
+            //clear sky conditions
             if (conditionNumber == 800)
             {
-                //backgroundPicture.Image = Properties.Resources.SunnyBackGround;
+                background.Image = Properties.Resources.SunnyBackGround;
+                background.BackgroundImageLayout = ImageLayout.Stretch;
             }
-            //picture boxes backgroundPicture.Image = Properties.Resources.insidecabin;
-            //backgroundPicture.BackgroundImageLayout = ImageLayout.Zoom;
+            //rain conditions
+            else if(conditionNumber < 600 && conditionNumber > 500)
+            {
+                background.Image = Properties.Resources.RainBackground;
+                background.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            //thunder conditions
+            else if(conditionNumber > 200 && conditionNumber < 300)
+            {
+                //backgroundImage = Properties.Resources.
+            }
+            //cloudy
+            else if (conditionNumber >800)
+            {
+
+            }
+
 
 
 

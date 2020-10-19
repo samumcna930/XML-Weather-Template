@@ -51,9 +51,11 @@
             this.tmrwCondLabel = new System.Windows.Forms.Label();
             this.day2CondLabel = new System.Windows.Forms.Label();
             this.day3CondLabel = new System.Windows.Forms.Label();
+            this.background = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -113,7 +115,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Yu Gothic UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Aqua;
-            this.minOutput.Location = new System.Drawing.Point(41, 168);
+            this.minOutput.Location = new System.Drawing.Point(50, 248);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(105, 52);
             this.minOutput.TabIndex = 43;
@@ -125,7 +127,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.OrangeRed;
-            this.maxOutput.Location = new System.Drawing.Point(345, 168);
+            this.maxOutput.Location = new System.Drawing.Point(354, 249);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(110, 51);
             this.maxOutput.TabIndex = 44;
@@ -287,21 +289,31 @@
             // day3CondLabel
             // 
             this.day3CondLabel.BackColor = System.Drawing.Color.Transparent;
-            this.day3CondLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day3CondLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day3CondLabel.ForeColor = System.Drawing.Color.White;
-            this.day3CondLabel.Location = new System.Drawing.Point(336, 608);
+            this.day3CondLabel.Location = new System.Drawing.Point(336, 590);
             this.day3CondLabel.Name = "day3CondLabel";
-            this.day3CondLabel.Size = new System.Drawing.Size(168, 37);
+            this.day3CondLabel.Size = new System.Drawing.Size(168, 119);
             this.day3CondLabel.TabIndex = 58;
             this.day3CondLabel.Text = "label3";
-            this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // background
+            // 
+            this.background.BackColor = System.Drawing.Color.Transparent;
+            this.background.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("background.BackgroundImage")));
+            this.background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.background.Location = new System.Drawing.Point(0, 0);
+            this.background.Name = "background";
+            this.background.Size = new System.Drawing.Size(487, 705);
+            this.background.TabIndex = 59;
+            this.background.TabStop = false;
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
@@ -323,6 +335,7 @@
             this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.tempOutput);
             this.Controls.Add(this.underlineLabel);
+            this.Controls.Add(this.background);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CurrentScreen";
@@ -330,6 +343,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,5 +370,6 @@
         private System.Windows.Forms.Label tmrwCondLabel;
         private System.Windows.Forms.Label day2CondLabel;
         private System.Windows.Forms.Label day3CondLabel;
+        private System.Windows.Forms.PictureBox background;
     }
 }

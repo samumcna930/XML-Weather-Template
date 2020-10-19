@@ -45,7 +45,7 @@
             this.temp2Label = new System.Windows.Forms.Label();
             this.temp3Label = new System.Windows.Forms.Label();
             this.temp4Label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cityInput = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
@@ -183,7 +183,7 @@
             // temp1Label
             // 
             this.temp1Label.BackColor = System.Drawing.Color.Transparent;
-            this.temp1Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp1Label.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temp1Label.Location = new System.Drawing.Point(7, 119);
             this.temp1Label.Name = "temp1Label";
             this.temp1Label.Size = new System.Drawing.Size(141, 69);
@@ -193,7 +193,7 @@
             // temp5Label
             // 
             this.temp5Label.BackColor = System.Drawing.Color.Transparent;
-            this.temp5Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp5Label.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temp5Label.Location = new System.Drawing.Point(7, 572);
             this.temp5Label.Name = "temp5Label";
             this.temp5Label.Size = new System.Drawing.Size(141, 69);
@@ -203,7 +203,7 @@
             // temp2Label
             // 
             this.temp2Label.BackColor = System.Drawing.Color.Transparent;
-            this.temp2Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp2Label.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temp2Label.Location = new System.Drawing.Point(12, 235);
             this.temp2Label.Name = "temp2Label";
             this.temp2Label.Size = new System.Drawing.Size(141, 69);
@@ -213,7 +213,7 @@
             // temp3Label
             // 
             this.temp3Label.BackColor = System.Drawing.Color.Transparent;
-            this.temp3Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp3Label.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temp3Label.Location = new System.Drawing.Point(14, 356);
             this.temp3Label.Name = "temp3Label";
             this.temp3Label.Size = new System.Drawing.Size(141, 69);
@@ -223,20 +223,20 @@
             // temp4Label
             // 
             this.temp4Label.BackColor = System.Drawing.Color.Transparent;
-            this.temp4Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp4Label.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.temp4Label.Location = new System.Drawing.Point(7, 456);
             this.temp4Label.Name = "temp4Label";
             this.temp4Label.Size = new System.Drawing.Size(141, 69);
             this.temp4Label.TabIndex = 77;
             this.temp4Label.Text = "label5";
             // 
-            // textBox1
+            // cityInput
             // 
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(246, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 35);
-            this.textBox1.TabIndex = 78;
+            this.cityInput.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityInput.Location = new System.Drawing.Point(246, 3);
+            this.cityInput.Name = "cityInput";
+            this.cityInput.Size = new System.Drawing.Size(202, 35);
+            this.cityInput.TabIndex = 78;
             // 
             // searchButton
             // 
@@ -249,6 +249,7 @@
             this.searchButton.TabIndex = 79;
             this.searchButton.Text = "SEARCH";
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // ForecastScreen
             // 
@@ -262,7 +263,7 @@
             this.Controls.Add(this.temp5Label);
             this.Controls.Add(this.day5Label);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cityInput);
             this.Controls.Add(this.temp2Label);
             this.Controls.Add(this.temp1Label);
             this.Controls.Add(this.day5Icon);
@@ -307,7 +308,7 @@
         private System.Windows.Forms.Label temp2Label;
         private System.Windows.Forms.Label temp3Label;
         private System.Windows.Forms.Label temp4Label;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cityInput;
         private System.Windows.Forms.Button searchButton;
     }
 }

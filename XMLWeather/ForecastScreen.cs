@@ -158,23 +158,24 @@ namespace XMLWeather
 
             double tempLow = Convert.ToDouble(Form1.days[0].tempLow);
             double tempHigh = Convert.ToDouble(Form1.days[0].tempHigh);
-            temp1Label.Text = tempLow.ToString("##") + "\u00B0" + "C" + " / " + tempHigh.ToString("##") + "\u00B0" + "C";
+            temp1Label.Text = tempLow.ToString("##") + "\u00B0" + "C" + " / " + tempHigh.ToString("##") + "\u00B0" + "C" + "\n" + Form1.days[0].condition;
+
 
             double tempLow2 = Convert.ToDouble(Form1.days[1].tempLow);
             double tempHigh2 = Convert.ToDouble(Form1.days[1].tempHigh);
-            temp2Label.Text = tempLow2.ToString("##") + "\u00B0" + "C" + " / " + tempHigh2.ToString("##") + "\u00B0" + "C";
+            temp2Label.Text = tempLow2.ToString("##") + "\u00B0" + "C" + " / " + tempHigh2.ToString("##") + "\u00B0" + "C" + "\n" + Form1.days[1].condition;
 
             double tempLow3 = Convert.ToDouble(Form1.days[2].tempLow);
             double tempHigh3 = Convert.ToDouble(Form1.days[2].tempHigh);
-            temp3Label.Text = tempLow3.ToString("##") + "\u00B0" + "C" + " / " + tempHigh3.ToString("##") + "\u00B0" + "C";
+            temp3Label.Text = tempLow3.ToString("##") + "\u00B0" + "C" + " / " + tempHigh3.ToString("##") + "\u00B0" + "C" + "\n" + Form1.days[2].condition;
 
             double tempLow4 = Convert.ToDouble(Form1.days[3].tempLow);
             double tempHigh4 = Convert.ToDouble(Form1.days[3].tempHigh);
-            temp4Label.Text = tempLow4.ToString("##") + "\u00B0" + "C" + " / " + tempHigh4.ToString("##") + "\u00B0" + "C";
+            temp4Label.Text = tempLow4.ToString("##") + "\u00B0" + "C" + " / " + tempHigh4.ToString("##") + "\u00B0" + "C" + "\n" + Form1.days[3].condition;
 
             double tempLow5 = Convert.ToDouble(Form1.days[4].tempLow);
             double tempHigh5 = Convert.ToDouble(Form1.days[4].tempHigh);
-            temp5Label.Text = tempLow5.ToString("##") + "\u00B0" + "C" + " / " + tempHigh5.ToString("##") + "\u00B0" + "C";
+            temp5Label.Text = tempLow5.ToString("##") + "\u00B0" + "C" + " / " + tempHigh5.ToString("##") + "\u00B0" + "C" + "\n" + Form1.days[4].condition;
 
             day1Label.Text = DateTime.Now.ToString("dddd");
             day2Label.Text = DateTime.Now.AddDays(1).DayOfWeek.ToString();
@@ -190,6 +191,11 @@ namespace XMLWeather
 
             CurrentScreen cs = new CurrentScreen();
             f.Controls.Add(cs);
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            cityInput.Text = 
         }
     }
 }

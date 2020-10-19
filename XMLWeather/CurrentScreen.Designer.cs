@@ -45,16 +45,16 @@
             this.tomorrowLabel = new System.Windows.Forms.Label();
             this.finalDayLabel = new System.Windows.Forms.Label();
             this.nextDayLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tmrwCondLabel = new System.Windows.Forms.Label();
             this.day2CondLabel = new System.Windows.Forms.Label();
             this.day3CondLabel = new System.Windows.Forms.Label();
+            this.day3Icon = new System.Windows.Forms.PictureBox();
+            this.day2Icon = new System.Windows.Forms.PictureBox();
+            this.day1Icon = new System.Windows.Forms.PictureBox();
             this.background = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,10 +63,10 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(-45, 0);
+            this.cityOutput.Location = new System.Drawing.Point(-22, 0);
             this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cityOutput.Name = "cityOutput";
-            this.cityOutput.Size = new System.Drawing.Size(283, 55);
+            this.cityOutput.Size = new System.Drawing.Size(262, 55);
             this.cityOutput.TabIndex = 22;
             this.cityOutput.Text = "City";
             this.cityOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,7 +89,7 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(191, 0);
+            this.forecastLabel.Location = new System.Drawing.Point(246, 0);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(198, 55);
@@ -115,7 +115,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Yu Gothic UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Aqua;
-            this.minOutput.Location = new System.Drawing.Point(50, 248);
+            this.minOutput.Location = new System.Drawing.Point(27, 248);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(105, 52);
             this.minOutput.TabIndex = 43;
@@ -127,7 +127,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.OrangeRed;
-            this.maxOutput.Location = new System.Drawing.Point(354, 249);
+            this.maxOutput.Location = new System.Drawing.Point(365, 168);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(110, 51);
             this.maxOutput.TabIndex = 44;
@@ -235,68 +235,70 @@
             this.nextDayLabel.Text = "Wednesday";
             this.nextDayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 528);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 67);
-            this.pictureBox1.TabIndex = 53;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(205, 528);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(86, 67);
-            this.pictureBox2.TabIndex = 54;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(379, 528);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(85, 67);
-            this.pictureBox3.TabIndex = 55;
-            this.pictureBox3.TabStop = false;
-            // 
             // tmrwCondLabel
             // 
             this.tmrwCondLabel.BackColor = System.Drawing.Color.Transparent;
-            this.tmrwCondLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tmrwCondLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tmrwCondLabel.ForeColor = System.Drawing.Color.White;
-            this.tmrwCondLabel.Location = new System.Drawing.Point(3, 608);
+            this.tmrwCondLabel.Location = new System.Drawing.Point(3, 590);
             this.tmrwCondLabel.Name = "tmrwCondLabel";
-            this.tmrwCondLabel.Size = new System.Drawing.Size(168, 37);
+            this.tmrwCondLabel.Size = new System.Drawing.Size(168, 119);
             this.tmrwCondLabel.TabIndex = 56;
             this.tmrwCondLabel.Text = "label1";
-            this.tmrwCondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tmrwCondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // day2CondLabel
             // 
             this.day2CondLabel.BackColor = System.Drawing.Color.Transparent;
-            this.day2CondLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day2CondLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day2CondLabel.ForeColor = System.Drawing.Color.White;
-            this.day2CondLabel.Location = new System.Drawing.Point(162, 608);
+            this.day2CondLabel.Location = new System.Drawing.Point(162, 590);
             this.day2CondLabel.Name = "day2CondLabel";
-            this.day2CondLabel.Size = new System.Drawing.Size(168, 37);
+            this.day2CondLabel.Size = new System.Drawing.Size(168, 119);
             this.day2CondLabel.TabIndex = 57;
             this.day2CondLabel.Text = "label2";
-            this.day2CondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.day2CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // day3CondLabel
             // 
             this.day3CondLabel.BackColor = System.Drawing.Color.Transparent;
-            this.day3CondLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day3CondLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day3CondLabel.ForeColor = System.Drawing.Color.White;
-            this.day3CondLabel.Location = new System.Drawing.Point(336, 590);
+            this.day3CondLabel.Location = new System.Drawing.Point(330, 590);
             this.day3CondLabel.Name = "day3CondLabel";
             this.day3CondLabel.Size = new System.Drawing.Size(168, 119);
             this.day3CondLabel.TabIndex = 58;
             this.day3CondLabel.Text = "label3";
             this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // day3Icon
+            // 
+            this.day3Icon.BackColor = System.Drawing.Color.Transparent;
+            this.day3Icon.Location = new System.Drawing.Point(379, 528);
+            this.day3Icon.Name = "day3Icon";
+            this.day3Icon.Size = new System.Drawing.Size(86, 67);
+            this.day3Icon.TabIndex = 55;
+            this.day3Icon.TabStop = false;
+            // 
+            // day2Icon
+            // 
+            this.day2Icon.BackColor = System.Drawing.Color.Transparent;
+            this.day2Icon.Location = new System.Drawing.Point(205, 528);
+            this.day2Icon.Name = "day2Icon";
+            this.day2Icon.Size = new System.Drawing.Size(86, 67);
+            this.day2Icon.TabIndex = 54;
+            this.day2Icon.TabStop = false;
+            // 
+            // day1Icon
+            // 
+            this.day1Icon.BackColor = System.Drawing.Color.Black;
+            this.day1Icon.BackgroundImage = global::XMLWeather.Properties.Resources.CloudyIcon;
+            this.day1Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.day1Icon.Location = new System.Drawing.Point(36, 528);
+            this.day1Icon.Name = "day1Icon";
+            this.day1Icon.Size = new System.Drawing.Size(86, 67);
+            this.day1Icon.TabIndex = 53;
+            this.day1Icon.TabStop = false;
             // 
             // background
             // 
@@ -315,17 +317,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.day2CondLabel);
+            this.Controls.Add(this.tmrwCondLabel);
+            this.Controls.Add(this.day1Icon);
+            this.Controls.Add(this.day2Icon);
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.day3CondLabel);
-            this.Controls.Add(this.day2CondLabel);
-            this.Controls.Add(this.tmrwCondLabel);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.nextDayLabel);
+            this.Controls.Add(this.day3Icon);
             this.Controls.Add(this.finalDayLabel);
-            this.Controls.Add(this.tomorrowLabel);
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.humidityLabel);
             this.Controls.Add(this.windSpeedLabel);
@@ -335,14 +335,16 @@
             this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.tempOutput);
             this.Controls.Add(this.underlineLabel);
+            this.Controls.Add(this.nextDayLabel);
+            this.Controls.Add(this.tomorrowLabel);
             this.Controls.Add(this.background);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(487, 705);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
             this.ResumeLayout(false);
 
@@ -364,9 +366,9 @@
         private System.Windows.Forms.Label tomorrowLabel;
         private System.Windows.Forms.Label finalDayLabel;
         private System.Windows.Forms.Label nextDayLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox day1Icon;
+        private System.Windows.Forms.PictureBox day2Icon;
+        private System.Windows.Forms.PictureBox day3Icon;
         private System.Windows.Forms.Label tmrwCondLabel;
         private System.Windows.Forms.Label day2CondLabel;
         private System.Windows.Forms.Label day3CondLabel;

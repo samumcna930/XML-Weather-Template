@@ -28,32 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.forecastLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.min1 = new System.Windows.Forms.Label();
-            this.minLabel = new System.Windows.Forms.Label();
-            this.max1 = new System.Windows.Forms.Label();
-            this.maxLabel = new System.Windows.Forms.Label();
             this.underlineLabel2 = new System.Windows.Forms.Label();
-            this.date1 = new System.Windows.Forms.Label();
-            this.date2 = new System.Windows.Forms.Label();
-            this.min2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.max2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // forecastLabel
-            // 
-            this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(281, 0);
-            this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(206, 45);
-            this.forecastLabel.TabIndex = 62;
-            this.forecastLabel.Text = "Forecast";
             // 
             // label3
             // 
@@ -68,52 +45,12 @@
             this.label3.Text = "Today";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // min1
-            // 
-            this.min1.BackColor = System.Drawing.Color.White;
-            this.min1.Location = new System.Drawing.Point(208, 204);
-            this.min1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.min1.Name = "min1";
-            this.min1.Size = new System.Drawing.Size(29, 16);
-            this.min1.TabIndex = 48;
-            // 
-            // minLabel
-            // 
-            this.minLabel.AutoSize = true;
-            this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(80, 204);
-            this.minLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.minLabel.Name = "minLabel";
-            this.minLabel.Size = new System.Drawing.Size(120, 17);
-            this.minLabel.TabIndex = 46;
-            this.minLabel.Text = " Min Temperature";
-            // 
-            // max1
-            // 
-            this.max1.BackColor = System.Drawing.Color.White;
-            this.max1.Location = new System.Drawing.Point(208, 168);
-            this.max1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.max1.Name = "max1";
-            this.max1.Size = new System.Drawing.Size(29, 16);
-            this.max1.TabIndex = 45;
-            // 
-            // maxLabel
-            // 
-            this.maxLabel.AutoSize = true;
-            this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(80, 168);
-            this.maxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size(119, 17);
-            this.maxLabel.TabIndex = 44;
-            this.maxLabel.Text = "Max Temperature";
-            // 
             // underlineLabel2
             // 
             this.underlineLabel2.BackColor = System.Drawing.Color.Transparent;
             this.underlineLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.underlineLabel2.ForeColor = System.Drawing.Color.White;
-            this.underlineLabel2.Location = new System.Drawing.Point(235, 26);
+            this.underlineLabel2.Location = new System.Drawing.Point(-6, 36);
             this.underlineLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.underlineLabel2.Name = "underlineLabel2";
             this.underlineLabel2.Size = new System.Drawing.Size(257, 34);
@@ -121,108 +58,22 @@
             this.underlineLabel2.Text = "____________________________";
             this.underlineLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // date1
-            // 
-            this.date1.AutoSize = true;
-            this.date1.ForeColor = System.Drawing.Color.White;
-            this.date1.Location = new System.Drawing.Point(80, 135);
-            this.date1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.date1.Name = "date1";
-            this.date1.Size = new System.Drawing.Size(38, 17);
-            this.date1.TabIndex = 64;
-            this.date1.Text = "Date";
-            // 
-            // date2
-            // 
-            this.date2.AutoSize = true;
-            this.date2.ForeColor = System.Drawing.Color.White;
-            this.date2.Location = new System.Drawing.Point(80, 238);
-            this.date2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.date2.Name = "date2";
-            this.date2.Size = new System.Drawing.Size(38, 17);
-            this.date2.TabIndex = 69;
-            this.date2.Text = "Date";
-            // 
-            // min2
-            // 
-            this.min2.BackColor = System.Drawing.Color.White;
-            this.min2.Location = new System.Drawing.Point(208, 307);
-            this.min2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.min2.Name = "min2";
-            this.min2.Size = new System.Drawing.Size(29, 16);
-            this.min2.TabIndex = 68;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(80, 307);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 17);
-            this.label4.TabIndex = 67;
-            this.label4.Text = " Min Temperature";
-            // 
-            // max2
-            // 
-            this.max2.BackColor = System.Drawing.Color.White;
-            this.max2.Location = new System.Drawing.Point(208, 271);
-            this.max2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.max2.Name = "max2";
-            this.max2.Size = new System.Drawing.Size(29, 16);
-            this.max2.TabIndex = 66;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(80, 271);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 17);
-            this.label7.TabIndex = 65;
-            this.label7.Text = "Max Temperature";
-            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.date2);
-            this.Controls.Add(this.min2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.max2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.date1);
-            this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.min1);
-            this.Controls.Add(this.minLabel);
-            this.Controls.Add(this.max1);
-            this.Controls.Add(this.maxLabel);
             this.Controls.Add(this.underlineLabel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(487, 654);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label min1;
-        private System.Windows.Forms.Label minLabel;
-        private System.Windows.Forms.Label max1;
-        private System.Windows.Forms.Label maxLabel;
         private System.Windows.Forms.Label underlineLabel2;
-        private System.Windows.Forms.Label date1;
-        private System.Windows.Forms.Label date2;
-        private System.Windows.Forms.Label min2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label max2;
-        private System.Windows.Forms.Label label7;
     }
 }

@@ -195,7 +195,8 @@ namespace XMLWeather
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            cityInput.Text = 
+            try { }
+            catch { }
         }
     }
 }

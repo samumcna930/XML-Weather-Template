@@ -47,11 +47,13 @@
             this.temp4Label = new System.Windows.Forms.Label();
             this.cityInput = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day4Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // todayLabel
@@ -243,13 +245,24 @@
             this.searchButton.BackColor = System.Drawing.Color.LightSeaGreen;
             this.searchButton.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.ForeColor = System.Drawing.Color.Black;
-            this.searchButton.Location = new System.Drawing.Point(246, 44);
+            this.searchButton.Location = new System.Drawing.Point(237, 53);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(109, 36);
             this.searchButton.TabIndex = 79;
             this.searchButton.Text = "SEARCH";
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::XMLWeather.Properties.Resources.rec;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(208, -11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(279, 68);
+            this.pictureBox1.TabIndex = 80;
+            this.pictureBox1.TabStop = false;
             // 
             // ForecastScreen
             // 
@@ -277,6 +290,7 @@
             this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.underlineLabel2);
             this.Controls.Add(this.temp3Label);
+            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(487, 705);
@@ -285,6 +299,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.day4Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +325,6 @@
         private System.Windows.Forms.Label temp4Label;
         private System.Windows.Forms.TextBox cityInput;
         private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

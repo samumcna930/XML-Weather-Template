@@ -3487,6 +3487,9 @@
   <data name="RainIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RainIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SnowIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SnowIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

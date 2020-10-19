@@ -48,13 +48,13 @@
             this.tmrwCondLabel = new System.Windows.Forms.Label();
             this.day2CondLabel = new System.Windows.Forms.Label();
             this.day3CondLabel = new System.Windows.Forms.Label();
-            this.day3Icon = new System.Windows.Forms.PictureBox();
-            this.day2Icon = new System.Windows.Forms.PictureBox();
             this.day1Icon = new System.Windows.Forms.PictureBox();
+            this.day2Icon = new System.Windows.Forms.PictureBox();
+            this.day3Icon = new System.Windows.Forms.PictureBox();
             this.background = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,7 +141,7 @@
             this.dateLabel.ForeColor = System.Drawing.Color.White;
             this.dateLabel.Location = new System.Drawing.Point(-30, 41);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(247, 42);
+            this.dateLabel.Size = new System.Drawing.Size(247, 44);
             this.dateLabel.TabIndex = 45;
             this.dateLabel.Text = "00:12:60";
             this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -271,24 +271,6 @@
             this.day3CondLabel.Text = "label3";
             this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // day3Icon
-            // 
-            this.day3Icon.BackColor = System.Drawing.Color.Transparent;
-            this.day3Icon.Location = new System.Drawing.Point(379, 528);
-            this.day3Icon.Name = "day3Icon";
-            this.day3Icon.Size = new System.Drawing.Size(86, 67);
-            this.day3Icon.TabIndex = 55;
-            this.day3Icon.TabStop = false;
-            // 
-            // day2Icon
-            // 
-            this.day2Icon.BackColor = System.Drawing.Color.Transparent;
-            this.day2Icon.Location = new System.Drawing.Point(205, 528);
-            this.day2Icon.Name = "day2Icon";
-            this.day2Icon.Size = new System.Drawing.Size(86, 67);
-            this.day2Icon.TabIndex = 54;
-            this.day2Icon.TabStop = false;
-            // 
             // day1Icon
             // 
             this.day1Icon.BackColor = System.Drawing.Color.Black;
@@ -299,6 +281,24 @@
             this.day1Icon.Size = new System.Drawing.Size(86, 67);
             this.day1Icon.TabIndex = 53;
             this.day1Icon.TabStop = false;
+            // 
+            // day2Icon
+            // 
+            this.day2Icon.BackColor = System.Drawing.Color.Transparent;
+            this.day2Icon.Location = new System.Drawing.Point(205, 528);
+            this.day2Icon.Name = "day2Icon";
+            this.day2Icon.Size = new System.Drawing.Size(86, 67);
+            this.day2Icon.TabIndex = 54;
+            this.day2Icon.TabStop = false;
+            // 
+            // day3Icon
+            // 
+            this.day3Icon.BackColor = System.Drawing.Color.Transparent;
+            this.day3Icon.Location = new System.Drawing.Point(379, 528);
+            this.day3Icon.Name = "day3Icon";
+            this.day3Icon.Size = new System.Drawing.Size(86, 67);
+            this.day3Icon.TabIndex = 55;
+            this.day3Icon.TabStop = false;
             // 
             // background
             // 
@@ -317,6 +317,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.day2CondLabel);
             this.Controls.Add(this.tmrwCondLabel);
             this.Controls.Add(this.day1Icon);
@@ -331,7 +332,6 @@
             this.Controls.Add(this.windSpeedLabel);
             this.Controls.Add(this.feelsLikeLabel);
             this.Controls.Add(this.dateLabel);
-            this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.tempOutput);
             this.Controls.Add(this.underlineLabel);
@@ -342,9 +342,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(487, 705);
-            ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
             this.ResumeLayout(false);
 

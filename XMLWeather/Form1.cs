@@ -42,7 +42,6 @@ namespace XMLWeather
                 reader.ReadToFollowing("time");
                 d.date = reader.GetAttribute("day");
 
-
                 reader.ReadToFollowing("symbol");
                 d.conditionNumber = reader.GetAttribute("number");
                 d.condition = reader.GetAttribute("name");
@@ -51,7 +50,6 @@ namespace XMLWeather
                 d.tempHigh = reader.GetAttribute("max");
                 d.tempLow = reader.GetAttribute("min");
 
-                //TODO: if day object not null add to the days list
                 days.Add(d);
             }
         }

@@ -40,11 +40,13 @@
             this.day4Icon = new System.Windows.Forms.PictureBox();
             this.day3Icon = new System.Windows.Forms.PictureBox();
             this.day5Icon = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.temp1Label = new System.Windows.Forms.Label();
+            this.temp5Label = new System.Windows.Forms.Label();
+            this.temp2Label = new System.Windows.Forms.Label();
+            this.temp3Label = new System.Windows.Forms.Label();
+            this.temp4Label = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day4Icon)).BeginInit();
@@ -57,7 +59,7 @@
             this.todayLabel.BackColor = System.Drawing.Color.Transparent;
             this.todayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.todayLabel.ForeColor = System.Drawing.Color.White;
-            this.todayLabel.Location = new System.Drawing.Point(82, 0);
+            this.todayLabel.Location = new System.Drawing.Point(11, 0);
             this.todayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.todayLabel.Name = "todayLabel";
             this.todayLabel.Size = new System.Drawing.Size(169, 57);
@@ -73,17 +75,17 @@
             this.underlineLabel2.Location = new System.Drawing.Point(-6, 36);
             this.underlineLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.underlineLabel2.Name = "underlineLabel2";
-            this.underlineLabel2.Size = new System.Drawing.Size(257, 34);
+            this.underlineLabel2.Size = new System.Drawing.Size(199, 34);
             this.underlineLabel2.TabIndex = 63;
-            this.underlineLabel2.Text = "____________________________";
+            this.underlineLabel2.Text = "________________________";
             this.underlineLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // day1Label
             // 
             this.day1Label.BackColor = System.Drawing.Color.Transparent;
-            this.day1Label.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day1Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day1Label.ForeColor = System.Drawing.Color.White;
-            this.day1Label.Location = new System.Drawing.Point(3, 70);
+            this.day1Label.Location = new System.Drawing.Point(-12, 70);
             this.day1Label.Name = "day1Label";
             this.day1Label.Size = new System.Drawing.Size(299, 56);
             this.day1Label.TabIndex = 64;
@@ -92,9 +94,9 @@
             // day2Label
             // 
             this.day2Label.BackColor = System.Drawing.Color.Transparent;
-            this.day2Label.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day2Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day2Label.ForeColor = System.Drawing.Color.White;
-            this.day2Label.Location = new System.Drawing.Point(3, 179);
+            this.day2Label.Location = new System.Drawing.Point(-12, 179);
             this.day2Label.Name = "day2Label";
             this.day2Label.Size = new System.Drawing.Size(299, 56);
             this.day2Label.TabIndex = 65;
@@ -103,9 +105,9 @@
             // day3Label
             // 
             this.day3Label.BackColor = System.Drawing.Color.Transparent;
-            this.day3Label.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day3Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day3Label.ForeColor = System.Drawing.Color.White;
-            this.day3Label.Location = new System.Drawing.Point(3, 302);
+            this.day3Label.Location = new System.Drawing.Point(-10, 302);
             this.day3Label.Name = "day3Label";
             this.day3Label.Size = new System.Drawing.Size(299, 56);
             this.day3Label.TabIndex = 66;
@@ -114,9 +116,9 @@
             // day4Label
             // 
             this.day4Label.BackColor = System.Drawing.Color.Transparent;
-            this.day4Label.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day4Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day4Label.ForeColor = System.Drawing.Color.White;
-            this.day4Label.Location = new System.Drawing.Point(3, 425);
+            this.day4Label.Location = new System.Drawing.Point(-10, 412);
             this.day4Label.Name = "day4Label";
             this.day4Label.Size = new System.Drawing.Size(299, 56);
             this.day4Label.TabIndex = 67;
@@ -125,9 +127,9 @@
             // day5Label
             // 
             this.day5Label.BackColor = System.Drawing.Color.Transparent;
-            this.day5Label.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day5Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day5Label.ForeColor = System.Drawing.Color.White;
-            this.day5Label.Location = new System.Drawing.Point(-12, 547);
+            this.day5Label.Location = new System.Drawing.Point(-10, 527);
             this.day5Label.Name = "day5Label";
             this.day5Label.Size = new System.Drawing.Size(299, 56);
             this.day5Label.TabIndex = 68;
@@ -135,6 +137,7 @@
             // 
             // day1Icon
             // 
+            this.day1Icon.BackColor = System.Drawing.Color.Transparent;
             this.day1Icon.Location = new System.Drawing.Point(386, 70);
             this.day1Icon.Name = "day1Icon";
             this.day1Icon.Size = new System.Drawing.Size(81, 81);
@@ -143,6 +146,7 @@
             // 
             // day2Icon
             // 
+            this.day2Icon.BackColor = System.Drawing.Color.Transparent;
             this.day2Icon.Location = new System.Drawing.Point(386, 179);
             this.day2Icon.Name = "day2Icon";
             this.day2Icon.Size = new System.Drawing.Size(81, 81);
@@ -151,6 +155,7 @@
             // 
             // day4Icon
             // 
+            this.day4Icon.BackColor = System.Drawing.Color.Transparent;
             this.day4Icon.Location = new System.Drawing.Point(386, 425);
             this.day4Icon.Name = "day4Icon";
             this.day4Icon.Size = new System.Drawing.Size(81, 81);
@@ -159,6 +164,7 @@
             // 
             // day3Icon
             // 
+            this.day3Icon.BackColor = System.Drawing.Color.Transparent;
             this.day3Icon.Location = new System.Drawing.Point(386, 302);
             this.day3Icon.Name = "day3Icon";
             this.day3Icon.Size = new System.Drawing.Size(81, 81);
@@ -167,61 +173,82 @@
             // 
             // day5Icon
             // 
+            this.day5Icon.BackColor = System.Drawing.Color.Transparent;
             this.day5Icon.Location = new System.Drawing.Point(386, 547);
             this.day5Icon.Name = "day5Icon";
             this.day5Icon.Size = new System.Drawing.Size(81, 81);
             this.day5Icon.TabIndex = 72;
             this.day5Icon.TabStop = false;
             // 
-            // label1
+            // temp1Label
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 119);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 69);
-            this.label1.TabIndex = 73;
-            this.label1.Text = "label1";
+            this.temp1Label.BackColor = System.Drawing.Color.Transparent;
+            this.temp1Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp1Label.Location = new System.Drawing.Point(7, 119);
+            this.temp1Label.Name = "temp1Label";
+            this.temp1Label.Size = new System.Drawing.Size(141, 69);
+            this.temp1Label.TabIndex = 73;
+            this.temp1Label.Text = "label1";
             // 
-            // label2
+            // temp5Label
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 603);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 69);
-            this.label2.TabIndex = 74;
-            this.label2.Text = "label2";
+            this.temp5Label.BackColor = System.Drawing.Color.Transparent;
+            this.temp5Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp5Label.Location = new System.Drawing.Point(7, 572);
+            this.temp5Label.Name = "temp5Label";
+            this.temp5Label.Size = new System.Drawing.Size(141, 69);
+            this.temp5Label.TabIndex = 74;
+            this.temp5Label.Text = "label2";
             // 
-            // label3
+            // temp2Label
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 235);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 69);
-            this.label3.TabIndex = 75;
-            this.label3.Text = "label3";
+            this.temp2Label.BackColor = System.Drawing.Color.Transparent;
+            this.temp2Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp2Label.Location = new System.Drawing.Point(12, 235);
+            this.temp2Label.Name = "temp2Label";
+            this.temp2Label.Size = new System.Drawing.Size(141, 69);
+            this.temp2Label.TabIndex = 75;
+            this.temp2Label.Text = "label3";
             // 
-            // label4
+            // temp3Label
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 356);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 69);
-            this.label4.TabIndex = 76;
-            this.label4.Text = "label4";
+            this.temp3Label.BackColor = System.Drawing.Color.Transparent;
+            this.temp3Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp3Label.Location = new System.Drawing.Point(14, 356);
+            this.temp3Label.Name = "temp3Label";
+            this.temp3Label.Size = new System.Drawing.Size(141, 69);
+            this.temp3Label.TabIndex = 76;
+            this.temp3Label.Text = "label4";
             // 
-            // label5
+            // temp4Label
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 481);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 69);
-            this.label5.TabIndex = 77;
-            this.label5.Text = "label5";
+            this.temp4Label.BackColor = System.Drawing.Color.Transparent;
+            this.temp4Label.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp4Label.Location = new System.Drawing.Point(7, 456);
+            this.temp4Label.Name = "temp4Label";
+            this.temp4Label.Size = new System.Drawing.Size(141, 69);
+            this.temp4Label.TabIndex = 77;
+            this.temp4Label.Text = "label5";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(246, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(202, 35);
+            this.textBox1.TabIndex = 78;
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.searchButton.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.ForeColor = System.Drawing.Color.Black;
+            this.searchButton.Location = new System.Drawing.Point(246, 44);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(109, 36);
+            this.searchButton.TabIndex = 79;
+            this.searchButton.Text = "SEARCH";
+            this.searchButton.UseVisualStyleBackColor = false;
             // 
             // ForecastScreen
             // 
@@ -230,23 +257,25 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.ForeCastBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.temp4Label);
+            this.Controls.Add(this.day4Label);
+            this.Controls.Add(this.temp5Label);
+            this.Controls.Add(this.day5Label);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.temp2Label);
+            this.Controls.Add(this.temp1Label);
             this.Controls.Add(this.day5Icon);
             this.Controls.Add(this.day3Icon);
             this.Controls.Add(this.day4Icon);
             this.Controls.Add(this.day2Icon);
             this.Controls.Add(this.day1Icon);
-            this.Controls.Add(this.day5Label);
-            this.Controls.Add(this.day4Label);
             this.Controls.Add(this.day3Label);
             this.Controls.Add(this.day2Label);
             this.Controls.Add(this.day1Label);
             this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.underlineLabel2);
+            this.Controls.Add(this.temp3Label);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(487, 705);
@@ -256,6 +285,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Icon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -272,10 +302,12 @@
         private System.Windows.Forms.PictureBox day4Icon;
         private System.Windows.Forms.PictureBox day3Icon;
         private System.Windows.Forms.PictureBox day5Icon;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label temp1Label;
+        private System.Windows.Forms.Label temp5Label;
+        private System.Windows.Forms.Label temp2Label;
+        private System.Windows.Forms.Label temp3Label;
+        private System.Windows.Forms.Label temp4Label;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button searchButton;
     }
 }

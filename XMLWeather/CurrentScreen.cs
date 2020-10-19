@@ -14,6 +14,7 @@ namespace XMLWeather
         public CurrentScreen()
         {
             InitializeComponent();
+
             #region Parent section
             //To allow the labels to be transparents to the picture box image instead of the screen image
             cityOutput.Parent = background;
@@ -22,7 +23,6 @@ namespace XMLWeather
             maxOutput.Parent = background;
             feelsLikeLabel.Parent = background;
             conditionLabel.Parent = background;
-            windSpeedLabel.Parent = background;
             humidityLabel.Parent = background;
             dateLabel.Parent = background;
             tmrwCondLabel.Parent = background;
@@ -32,11 +32,13 @@ namespace XMLWeather
             day3CondLabel.Parent = background;
             tomorrowLabel.Parent = background;
             forecastLabel.Parent = background;
-            underlineLabel.Parent = background;
+            lowLabel.Parent = background;
+            highLabel.Parent = background;
             day1Icon.Parent = background;
             day2Icon.Parent = background;
             day3Icon.Parent = background;
             #endregion
+
             DisplayCurrent();
         }
 
@@ -62,9 +64,6 @@ namespace XMLWeather
 
             //display weather condition 
             conditionLabel.Text = Form1.days[0].condition;
-
-            //display windspeed
-            windSpeedLabel.Text = Form1.days[0].windSpeed;
 
             //display humidity 
             humidityLabel.Text = "Humidity " + Form1.days[0].humidity + "%";
@@ -109,8 +108,16 @@ namespace XMLWeather
             {
                 background.Image = Properties.Resources.CloudyBackground;
                 background.BackgroundImageLayout = ImageLayout.Stretch;
+                tomorrowLabel.ForeColor = Color.Black;
+                nextDayLabel.ForeColor = Color.Black;
+                finalDayLabel.ForeColor = Color.Black;
+                humidityLabel.ForeColor = Color.Black;
+                feelsLikeLabel.ForeColor = Color.Black;
+                tmrwCondLabel.ForeColor = Color.Black;
+                day2CondLabel.ForeColor = Color.Black;
+                day3CondLabel.ForeColor = Color.Black;
             }
-            else 
+            else
             {
                 background.Image = Properties.Resources.DefaultBackground;
                 background.BackgroundImageLayout = ImageLayout.Stretch;
@@ -121,25 +128,25 @@ namespace XMLWeather
             int conditionNumber1 = Convert.ToInt32(Form1.days[1].conditionNumber);
             if (conditionNumber1 == 800)
             {
-                day1Icon.Image = Properties.Resources.SunnyIcon;
+                day1Icon.BackgroundImage = Properties.Resources.SunnyIcon;
                 day1Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //rain conditions
             else if (conditionNumber1 < 600 && conditionNumber1 > 300)
             {
-                day1Icon.Image = Properties.Resources.RainIcon;
+                day1Icon.BackgroundImage = Properties.Resources.RainIcon;
                 day1Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //thunder conditions
             else if (conditionNumber1 > 200 && conditionNumber1 < 300)
             {
-                day1Icon.Image = Properties.Resources.ThunderStormIcon;
+                day1Icon.BackgroundImage = Properties.Resources.ThunderStormIcon;
                 day1Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //cloudy
             else if (conditionNumber1 > 800)
             {
-                day1Icon.Image = Properties.Resources.CloudyIcon;
+                day1Icon.BackgroundImage = Properties.Resources.CloudyIcon;
                 day1Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             #endregion
@@ -149,25 +156,25 @@ namespace XMLWeather
             //sunny condition
             if (conditionNumber2 == 800)
             {
-                day2Icon.Image = Properties.Resources.SunnyIcon;
+                day2Icon.BackgroundImage = Properties.Resources.SunnyIcon;
                 day2Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //rain conditions
             else if (conditionNumber2 < 600 && conditionNumber2 > 300)
             {
-                day2Icon.Image = Properties.Resources.RainIcon;
+                day2Icon.BackgroundImage = Properties.Resources.RainIcon;
                 day2Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //thunder conditions
             else if (conditionNumber2 > 200 && conditionNumber2 < 300)
             {
-                day2Icon.Image = Properties.Resources.ThunderStormIcon;
+                day2Icon.BackgroundImage = Properties.Resources.ThunderStormIcon;
                 day2Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //cloudy
             else if (conditionNumber2 > 800)
             {
-                day2Icon.Image = Properties.Resources.CloudyIcon;
+                day2Icon.BackgroundImage = Properties.Resources.CloudyIcon;
                 day2Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             #endregion
@@ -182,25 +189,22 @@ namespace XMLWeather
             //rain conditions
             else if (conditionNumber3 < 600 && conditionNumber3 > 300)
             {
-                day3Icon.Image = Properties.Resources.RainIcon;
+                day3Icon.BackgroundImage = Properties.Resources.RainIcon;
                 day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //thunder conditions
             else if (conditionNumber3 > 200 && conditionNumber3 < 300)
             {
-                day3Icon.Image = Properties.Resources.ThunderStormIcon;
+                day3Icon.BackgroundImage = Properties.Resources.ThunderStormIcon;
                 day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             //cloudy
             else if (conditionNumber3 > 800)
             {
-                day3Icon.Image = Properties.Resources.CloudyIcon;
+                day3Icon.BackgroundImage = Properties.Resources.CloudyIcon;
                 day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
             }
             #endregion 
-
-
-
 
         }
 

@@ -33,12 +33,10 @@
             this.cityOutput = new System.Windows.Forms.Label();
             this.tempOutput = new System.Windows.Forms.Label();
             this.forecastLabel = new System.Windows.Forms.Label();
-            this.underlineLabel = new System.Windows.Forms.Label();
             this.minOutput = new System.Windows.Forms.Label();
             this.maxOutput = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
             this.feelsLikeLabel = new System.Windows.Forms.Label();
-            this.windSpeedLabel = new System.Windows.Forms.Label();
             this.humidityLabel = new System.Windows.Forms.Label();
             this.conditionLabel = new System.Windows.Forms.Label();
             this.clockTimer = new System.Windows.Forms.Timer(this.components);
@@ -48,13 +46,15 @@
             this.tmrwCondLabel = new System.Windows.Forms.Label();
             this.day2CondLabel = new System.Windows.Forms.Label();
             this.day3CondLabel = new System.Windows.Forms.Label();
-            this.day1Icon = new System.Windows.Forms.PictureBox();
-            this.day2Icon = new System.Windows.Forms.PictureBox();
             this.day3Icon = new System.Windows.Forms.PictureBox();
+            this.day2Icon = new System.Windows.Forms.PictureBox();
+            this.day1Icon = new System.Windows.Forms.PictureBox();
             this.background = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
+            this.lowLabel = new System.Windows.Forms.Label();
+            this.highLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@
             this.tempOutput.BackColor = System.Drawing.Color.Transparent;
             this.tempOutput.Font = new System.Drawing.Font("Yu Gothic UI", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempOutput.ForeColor = System.Drawing.Color.White;
-            this.tempOutput.Location = new System.Drawing.Point(114, 168);
+            this.tempOutput.Location = new System.Drawing.Point(113, 241);
             this.tempOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tempOutput.Name = "tempOutput";
             this.tempOutput.Size = new System.Drawing.Size(265, 132);
@@ -89,33 +89,20 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(246, 0);
+            this.forecastLabel.Location = new System.Drawing.Point(285, 0);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(198, 55);
             this.forecastLabel.TabIndex = 40;
             this.forecastLabel.Text = "Forecast";
-            // 
-            // underlineLabel
-            // 
-            this.underlineLabel.BackColor = System.Drawing.Color.Transparent;
-            this.underlineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.underlineLabel.ForeColor = System.Drawing.Color.White;
-            this.underlineLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.underlineLabel.Location = new System.Drawing.Point(243, 31);
-            this.underlineLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.underlineLabel.Name = "underlineLabel";
-            this.underlineLabel.Size = new System.Drawing.Size(263, 34);
-            this.underlineLabel.TabIndex = 42;
-            this.underlineLabel.Text = "_________________________";
-            this.underlineLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
             // minOutput
             // 
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Yu Gothic UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minOutput.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.minOutput.Location = new System.Drawing.Point(27, 248);
+            this.minOutput.ForeColor = System.Drawing.Color.White;
+            this.minOutput.Location = new System.Drawing.Point(26, 241);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(105, 52);
             this.minOutput.TabIndex = 43;
@@ -126,8 +113,8 @@
             // 
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxOutput.ForeColor = System.Drawing.Color.OrangeRed;
-            this.maxOutput.Location = new System.Drawing.Point(365, 168);
+            this.maxOutput.ForeColor = System.Drawing.Color.White;
+            this.maxOutput.Location = new System.Drawing.Point(364, 241);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(110, 51);
             this.maxOutput.TabIndex = 44;
@@ -139,7 +126,7 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
-            this.dateLabel.Location = new System.Drawing.Point(-30, 41);
+            this.dateLabel.Location = new System.Drawing.Point(-15, 41);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(247, 44);
             this.dateLabel.TabIndex = 45;
@@ -149,33 +136,21 @@
             // feelsLikeLabel
             // 
             this.feelsLikeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.feelsLikeLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.feelsLikeLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.feelsLikeLabel.ForeColor = System.Drawing.Color.White;
-            this.feelsLikeLabel.Location = new System.Drawing.Point(134, 310);
+            this.feelsLikeLabel.Location = new System.Drawing.Point(133, 383);
             this.feelsLikeLabel.Name = "feelsLikeLabel";
             this.feelsLikeLabel.Size = new System.Drawing.Size(230, 30);
             this.feelsLikeLabel.TabIndex = 46;
             this.feelsLikeLabel.Text = "Feels like";
             this.feelsLikeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // windSpeedLabel
-            // 
-            this.windSpeedLabel.BackColor = System.Drawing.Color.Transparent;
-            this.windSpeedLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.windSpeedLabel.ForeColor = System.Drawing.Color.White;
-            this.windSpeedLabel.Location = new System.Drawing.Point(10, 360);
-            this.windSpeedLabel.Name = "windSpeedLabel";
-            this.windSpeedLabel.Size = new System.Drawing.Size(230, 33);
-            this.windSpeedLabel.TabIndex = 47;
-            this.windSpeedLabel.Text = "1234";
-            this.windSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // humidityLabel
             // 
             this.humidityLabel.BackColor = System.Drawing.Color.Transparent;
-            this.humidityLabel.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidityLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityLabel.ForeColor = System.Drawing.Color.White;
-            this.humidityLabel.Location = new System.Drawing.Point(245, 360);
+            this.humidityLabel.Location = new System.Drawing.Point(133, 413);
             this.humidityLabel.Name = "humidityLabel";
             this.humidityLabel.Size = new System.Drawing.Size(230, 33);
             this.humidityLabel.TabIndex = 48;
@@ -187,7 +162,7 @@
             this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.ForeColor = System.Drawing.Color.White;
-            this.conditionLabel.Location = new System.Drawing.Point(47, 109);
+            this.conditionLabel.Location = new System.Drawing.Point(57, 167);
             this.conditionLabel.Name = "conditionLabel";
             this.conditionLabel.Size = new System.Drawing.Size(387, 49);
             this.conditionLabel.TabIndex = 49;
@@ -205,9 +180,9 @@
             this.tomorrowLabel.BackColor = System.Drawing.Color.Transparent;
             this.tomorrowLabel.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tomorrowLabel.ForeColor = System.Drawing.Color.White;
-            this.tomorrowLabel.Location = new System.Drawing.Point(3, 485);
+            this.tomorrowLabel.Location = new System.Drawing.Point(0, 527);
             this.tomorrowLabel.Name = "tomorrowLabel";
-            this.tomorrowLabel.Size = new System.Drawing.Size(153, 53);
+            this.tomorrowLabel.Size = new System.Drawing.Size(153, 39);
             this.tomorrowLabel.TabIndex = 50;
             this.tomorrowLabel.Text = "Tomorrow";
             // 
@@ -216,9 +191,9 @@
             this.finalDayLabel.BackColor = System.Drawing.Color.Transparent;
             this.finalDayLabel.Font = new System.Drawing.Font("Myanmar Text", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finalDayLabel.ForeColor = System.Drawing.Color.White;
-            this.finalDayLabel.Location = new System.Drawing.Point(326, 484);
+            this.finalDayLabel.Location = new System.Drawing.Point(323, 526);
             this.finalDayLabel.Name = "finalDayLabel";
-            this.finalDayLabel.Size = new System.Drawing.Size(178, 53);
+            this.finalDayLabel.Size = new System.Drawing.Size(178, 40);
             this.finalDayLabel.TabIndex = 51;
             this.finalDayLabel.Text = "Thursday";
             this.finalDayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -228,9 +203,9 @@
             this.nextDayLabel.BackColor = System.Drawing.Color.Transparent;
             this.nextDayLabel.Font = new System.Drawing.Font("Myanmar Text", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextDayLabel.ForeColor = System.Drawing.Color.White;
-            this.nextDayLabel.Location = new System.Drawing.Point(162, 485);
+            this.nextDayLabel.Location = new System.Drawing.Point(159, 527);
             this.nextDayLabel.Name = "nextDayLabel";
-            this.nextDayLabel.Size = new System.Drawing.Size(176, 53);
+            this.nextDayLabel.Size = new System.Drawing.Size(176, 39);
             this.nextDayLabel.TabIndex = 52;
             this.nextDayLabel.Text = "Wednesday";
             this.nextDayLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -246,6 +221,7 @@
             this.tmrwCondLabel.TabIndex = 56;
             this.tmrwCondLabel.Text = "label1";
             this.tmrwCondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tmrwCondLabel.Visible = false;
             // 
             // day2CondLabel
             // 
@@ -258,6 +234,7 @@
             this.day2CondLabel.TabIndex = 57;
             this.day2CondLabel.Text = "label2";
             this.day2CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.day2CondLabel.Visible = false;
             // 
             // day3CondLabel
             // 
@@ -270,35 +247,36 @@
             this.day3CondLabel.TabIndex = 58;
             this.day3CondLabel.Text = "label3";
             this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // day1Icon
-            // 
-            this.day1Icon.BackColor = System.Drawing.Color.White;
-            this.day1Icon.BackgroundImage = global::XMLWeather.Properties.Resources.CloudyIcon;
-            this.day1Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.day1Icon.Location = new System.Drawing.Point(36, 528);
-            this.day1Icon.Name = "day1Icon";
-            this.day1Icon.Size = new System.Drawing.Size(86, 67);
-            this.day1Icon.TabIndex = 53;
-            this.day1Icon.TabStop = false;
-            // 
-            // day2Icon
-            // 
-            this.day2Icon.BackColor = System.Drawing.Color.Transparent;
-            this.day2Icon.Location = new System.Drawing.Point(205, 528);
-            this.day2Icon.Name = "day2Icon";
-            this.day2Icon.Size = new System.Drawing.Size(86, 67);
-            this.day2Icon.TabIndex = 54;
-            this.day2Icon.TabStop = false;
+            this.day3CondLabel.Visible = false;
             // 
             // day3Icon
             // 
             this.day3Icon.BackColor = System.Drawing.Color.Transparent;
-            this.day3Icon.Location = new System.Drawing.Point(379, 528);
+            this.day3Icon.Location = new System.Drawing.Point(373, 578);
             this.day3Icon.Name = "day3Icon";
-            this.day3Icon.Size = new System.Drawing.Size(86, 67);
+            this.day3Icon.Size = new System.Drawing.Size(86, 70);
             this.day3Icon.TabIndex = 55;
             this.day3Icon.TabStop = false;
+            // 
+            // day2Icon
+            // 
+            this.day2Icon.BackColor = System.Drawing.Color.Transparent;
+            this.day2Icon.Location = new System.Drawing.Point(199, 578);
+            this.day2Icon.Name = "day2Icon";
+            this.day2Icon.Size = new System.Drawing.Size(86, 70);
+            this.day2Icon.TabIndex = 54;
+            this.day2Icon.TabStop = false;
+            // 
+            // day1Icon
+            // 
+            this.day1Icon.BackColor = System.Drawing.Color.Transparent;
+            this.day1Icon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("day1Icon.BackgroundImage")));
+            this.day1Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.day1Icon.Location = new System.Drawing.Point(30, 578);
+            this.day1Icon.Name = "day1Icon";
+            this.day1Icon.Size = new System.Drawing.Size(86, 70);
+            this.day1Icon.TabIndex = 53;
+            this.day1Icon.TabStop = false;
             // 
             // background
             // 
@@ -311,30 +289,52 @@
             this.background.TabIndex = 59;
             this.background.TabStop = false;
             // 
+            // lowLabel
+            // 
+            this.lowLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lowLabel.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowLabel.ForeColor = System.Drawing.Color.White;
+            this.lowLabel.Location = new System.Drawing.Point(45, 293);
+            this.lowLabel.Name = "lowLabel";
+            this.lowLabel.Size = new System.Drawing.Size(61, 47);
+            this.lowLabel.TabIndex = 60;
+            this.lowLabel.Text = "Lo";
+            // 
+            // highLabel
+            // 
+            this.highLabel.BackColor = System.Drawing.Color.Transparent;
+            this.highLabel.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highLabel.ForeColor = System.Drawing.Color.White;
+            this.highLabel.Location = new System.Drawing.Point(385, 293);
+            this.highLabel.Name = "highLabel";
+            this.highLabel.Size = new System.Drawing.Size(63, 39);
+            this.highLabel.TabIndex = 61;
+            this.highLabel.Text = "Hi";
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.highLabel);
+            this.Controls.Add(this.lowLabel);
+            this.Controls.Add(this.day3Icon);
+            this.Controls.Add(this.day2Icon);
+            this.Controls.Add(this.day1Icon);
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.day2CondLabel);
             this.Controls.Add(this.tmrwCondLabel);
-            this.Controls.Add(this.day1Icon);
-            this.Controls.Add(this.day2Icon);
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
             this.Controls.Add(this.day3CondLabel);
-            this.Controls.Add(this.day3Icon);
             this.Controls.Add(this.finalDayLabel);
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.humidityLabel);
-            this.Controls.Add(this.windSpeedLabel);
             this.Controls.Add(this.feelsLikeLabel);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.tempOutput);
-            this.Controls.Add(this.underlineLabel);
             this.Controls.Add(this.nextDayLabel);
             this.Controls.Add(this.tomorrowLabel);
             this.Controls.Add(this.background);
@@ -342,9 +342,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(487, 705);
-            ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
             this.ResumeLayout(false);
 
@@ -354,12 +354,10 @@
         private System.Windows.Forms.Label cityOutput;
         private System.Windows.Forms.Label tempOutput;
         private System.Windows.Forms.Label forecastLabel;
-        private System.Windows.Forms.Label underlineLabel;
         private System.Windows.Forms.Label minOutput;
         private System.Windows.Forms.Label maxOutput;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Label feelsLikeLabel;
-        private System.Windows.Forms.Label windSpeedLabel;
         private System.Windows.Forms.Label humidityLabel;
         private System.Windows.Forms.Label conditionLabel;
         private System.Windows.Forms.Timer clockTimer;
@@ -373,5 +371,7 @@
         private System.Windows.Forms.Label day2CondLabel;
         private System.Windows.Forms.Label day3CondLabel;
         private System.Windows.Forms.PictureBox background;
+        private System.Windows.Forms.Label lowLabel;
+        private System.Windows.Forms.Label highLabel;
     }
 }

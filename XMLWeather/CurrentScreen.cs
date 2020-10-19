@@ -86,24 +86,33 @@ namespace XMLWeather
             #region Background Change
             //weather number
             int conditionNumber = Convert.ToInt32(Form1.days[0].conditionNumber);
+
             //clear sky conditions
             if (conditionNumber == 800)
             {
                 background.Image = Properties.Resources.SunnyBackGround;
                 background.BackgroundImageLayout = ImageLayout.Stretch;
             }
+
             //rain conditions
             else if (conditionNumber < 600 && conditionNumber > 300)
             {
                 background.Image = Properties.Resources.RainBackground;
                 background.BackgroundImageLayout = ImageLayout.Stretch;
+                tomorrowLabel.ForeColor = Color.White;
+                nextDayLabel.ForeColor = Color.White;
+                finalDayLabel.ForeColor = Color.White;
+                humidityLabel.ForeColor = Color.White;
+                feelsLikeLabel.ForeColor = Color.White;
             }
+
             //thunder conditions
             else if (conditionNumber > 200 && conditionNumber < 300)
             {
                 background.Image = Properties.Resources.ThunderStormBackground;
                 background.BackgroundImageLayout = ImageLayout.Stretch;
             }
+
             //cloudy
             else if (conditionNumber > 800)
             {
@@ -114,9 +123,6 @@ namespace XMLWeather
                 finalDayLabel.ForeColor = Color.Black;
                 humidityLabel.ForeColor = Color.Black;
                 feelsLikeLabel.ForeColor = Color.Black;
-                tmrwCondLabel.ForeColor = Color.Black;
-                day2CondLabel.ForeColor = Color.Black;
-                day3CondLabel.ForeColor = Color.Black;
             }
             else
             {

@@ -20,9 +20,19 @@ namespace XMLWeather
         {
             try 
             {
-                
+                errorLabel.Text = "";
+                Form1.place = cityInput.Text;
+
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+
+                CurrentScreen cs = new CurrentScreen();
+                f.Controls.Add(cs);
             }
-            catch { }
+            catch 
+            {
+                errorLabel.Text = "Please try again";
+            }
         }
     }
 }

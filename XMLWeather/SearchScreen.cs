@@ -21,7 +21,7 @@ namespace XMLWeather
             try 
             {
                 errorLabel.Text = "";
-                Form1.place = cityInput.Text;
+                Form1.location = cityInput.Text;
 
                 Form f = this.FindForm();
                 f.Controls.Remove(this);

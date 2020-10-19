@@ -45,15 +45,12 @@
             this.temp2Label = new System.Windows.Forms.Label();
             this.temp3Label = new System.Windows.Forms.Label();
             this.temp4Label = new System.Windows.Forms.Label();
-            this.cityInput = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.searchLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day4Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // todayLabel
@@ -61,7 +58,7 @@
             this.todayLabel.BackColor = System.Drawing.Color.Transparent;
             this.todayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.todayLabel.ForeColor = System.Drawing.Color.White;
-            this.todayLabel.Location = new System.Drawing.Point(11, 0);
+            this.todayLabel.Location = new System.Drawing.Point(64, 0);
             this.todayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.todayLabel.Name = "todayLabel";
             this.todayLabel.Size = new System.Drawing.Size(169, 57);
@@ -232,37 +229,17 @@
             this.temp4Label.TabIndex = 77;
             this.temp4Label.Text = "label5";
             // 
-            // cityInput
+            // searchLabel
             // 
-            this.cityInput.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityInput.Location = new System.Drawing.Point(246, 3);
-            this.cityInput.Name = "cityInput";
-            this.cityInput.Size = new System.Drawing.Size(202, 35);
-            this.cityInput.TabIndex = 78;
-            // 
-            // searchButton
-            // 
-            this.searchButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.searchButton.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.ForeColor = System.Drawing.Color.Black;
-            this.searchButton.Location = new System.Drawing.Point(237, 53);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(109, 36);
-            this.searchButton.TabIndex = 79;
-            this.searchButton.Text = "SEARCH";
-            this.searchButton.UseVisualStyleBackColor = false;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::XMLWeather.Properties.Resources.rec;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(208, -11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 68);
-            this.pictureBox1.TabIndex = 80;
-            this.pictureBox1.TabStop = false;
+            this.searchLabel.BackColor = System.Drawing.Color.Transparent;
+            this.searchLabel.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.ForeColor = System.Drawing.Color.White;
+            this.searchLabel.Location = new System.Drawing.Point(293, 0);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(134, 44);
+            this.searchLabel.TabIndex = 78;
+            this.searchLabel.Text = "SEARCH ";
+            this.searchLabel.Click += new System.EventHandler(this.searchLabel_Click);
             // 
             // ForecastScreen
             // 
@@ -271,12 +248,11 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.ForeCastBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.temp4Label);
             this.Controls.Add(this.day4Label);
             this.Controls.Add(this.temp5Label);
             this.Controls.Add(this.day5Label);
-            this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.cityInput);
             this.Controls.Add(this.temp2Label);
             this.Controls.Add(this.temp1Label);
             this.Controls.Add(this.day5Icon);
@@ -290,7 +266,6 @@
             this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.underlineLabel2);
             this.Controls.Add(this.temp3Label);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(487, 705);
@@ -299,9 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.day4Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -323,8 +296,6 @@
         private System.Windows.Forms.Label temp2Label;
         private System.Windows.Forms.Label temp3Label;
         private System.Windows.Forms.Label temp4Label;
-        private System.Windows.Forms.TextBox cityInput;
-        private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label searchLabel;
     }
 }

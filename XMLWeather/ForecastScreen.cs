@@ -193,10 +193,13 @@ namespace XMLWeather
             f.Controls.Add(cs);
         }
 
-        private void searchButton_Click(object sender, EventArgs e)
+        private void searchLabel_Click(object sender, EventArgs e)
         {
-            try { }
-            catch { }
+            Form s = this.FindForm();
+            s.Controls.Remove(this);
+
+            SearchScreen ss = new SearchScreen();
+            s.Controls.Add(ss);
         }
     }
 }

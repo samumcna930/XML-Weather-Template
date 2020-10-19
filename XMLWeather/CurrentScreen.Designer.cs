@@ -46,12 +46,13 @@
             this.tmrwCondLabel = new System.Windows.Forms.Label();
             this.day2CondLabel = new System.Windows.Forms.Label();
             this.day3CondLabel = new System.Windows.Forms.Label();
+            this.lowLabel = new System.Windows.Forms.Label();
+            this.highLabel = new System.Windows.Forms.Label();
             this.day3Icon = new System.Windows.Forms.PictureBox();
             this.day2Icon = new System.Windows.Forms.PictureBox();
             this.day1Icon = new System.Windows.Forms.PictureBox();
             this.background = new System.Windows.Forms.PictureBox();
-            this.lowLabel = new System.Windows.Forms.Label();
-            this.highLabel = new System.Windows.Forms.Label();
+            this.underlineLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
@@ -249,6 +250,28 @@
             this.day3CondLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.day3CondLabel.Visible = false;
             // 
+            // lowLabel
+            // 
+            this.lowLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lowLabel.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lowLabel.ForeColor = System.Drawing.Color.White;
+            this.lowLabel.Location = new System.Drawing.Point(45, 293);
+            this.lowLabel.Name = "lowLabel";
+            this.lowLabel.Size = new System.Drawing.Size(61, 47);
+            this.lowLabel.TabIndex = 60;
+            this.lowLabel.Text = "Lo";
+            // 
+            // highLabel
+            // 
+            this.highLabel.BackColor = System.Drawing.Color.Transparent;
+            this.highLabel.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highLabel.ForeColor = System.Drawing.Color.White;
+            this.highLabel.Location = new System.Drawing.Point(385, 293);
+            this.highLabel.Name = "highLabel";
+            this.highLabel.Size = new System.Drawing.Size(63, 39);
+            this.highLabel.TabIndex = 61;
+            this.highLabel.Text = "Hi";
+            // 
             // day3Icon
             // 
             this.day3Icon.BackColor = System.Drawing.Color.Transparent;
@@ -289,27 +312,15 @@
             this.background.TabIndex = 59;
             this.background.TabStop = false;
             // 
-            // lowLabel
+            // underlineLabel
             // 
-            this.lowLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lowLabel.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lowLabel.ForeColor = System.Drawing.Color.White;
-            this.lowLabel.Location = new System.Drawing.Point(45, 293);
-            this.lowLabel.Name = "lowLabel";
-            this.lowLabel.Size = new System.Drawing.Size(61, 47);
-            this.lowLabel.TabIndex = 60;
-            this.lowLabel.Text = "Lo";
-            // 
-            // highLabel
-            // 
-            this.highLabel.BackColor = System.Drawing.Color.Transparent;
-            this.highLabel.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.highLabel.ForeColor = System.Drawing.Color.White;
-            this.highLabel.Location = new System.Drawing.Point(385, 293);
-            this.highLabel.Name = "highLabel";
-            this.highLabel.Size = new System.Drawing.Size(63, 39);
-            this.highLabel.TabIndex = 61;
-            this.highLabel.Text = "Hi";
+            this.underlineLabel.BackColor = System.Drawing.Color.Transparent;
+            this.underlineLabel.ForeColor = System.Drawing.Color.White;
+            this.underlineLabel.Location = new System.Drawing.Point(291, 41);
+            this.underlineLabel.Name = "underlineLabel";
+            this.underlineLabel.Size = new System.Drawing.Size(226, 23);
+            this.underlineLabel.TabIndex = 62;
+            this.underlineLabel.Text = "_____________________________________________";
             // 
             // CurrentScreen
             // 
@@ -317,6 +328,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.underlineLabel);
             this.Controls.Add(this.highLabel);
             this.Controls.Add(this.lowLabel);
             this.Controls.Add(this.day3Icon);
@@ -373,5 +385,6 @@
         private System.Windows.Forms.PictureBox background;
         private System.Windows.Forms.Label lowLabel;
         private System.Windows.Forms.Label highLabel;
+        private System.Windows.Forms.Label underlineLabel;
     }
 }

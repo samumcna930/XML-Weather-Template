@@ -37,6 +37,7 @@ namespace XMLWeather
             day1Icon.Parent = background;
             day2Icon.Parent = background;
             day3Icon.Parent = background;
+            underlineLabel.Parent = background;
             #endregion
 
             DisplayCurrent();

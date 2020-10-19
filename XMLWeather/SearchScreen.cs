@@ -21,7 +21,8 @@ namespace XMLWeather
             try
             {
                 Form1.location = cityInput.Text;
-
+                Form1.ExtractForecast();
+                Form1.ExtractCurrent();
                 if (cityInput.Text == "")
                 {
                     errorLabel.Text = "Please try again";

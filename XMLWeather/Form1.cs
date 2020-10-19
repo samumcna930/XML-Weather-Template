@@ -32,6 +32,8 @@ namespace XMLWeather
         {
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
+            //XmlReader reader = XmlReader.Create("WeatherData7Day.xml");
+
             while (reader.Read())
             {
                 //TODO: create a day object
@@ -49,11 +51,9 @@ namespace XMLWeather
                 d.tempHigh = reader.GetAttribute("max");
                 d.tempLow = reader.GetAttribute("min");
 
-
                 //TODO: if day object not null add to the days list
                 days.Add(d);
             }
-
         }
 
         private void ExtractCurrent()
@@ -61,9 +61,15 @@ namespace XMLWeather
             // current info is not included in forecast file so we need to use this file to get it
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
+            //XmlReader reader = XmlReader.Create("WeatherData.xml");
+
             //TODO: find the city and current temperature and add to appropriate item in days list
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
+
+            reader.ReadToFollowing("sun");
+            days[0].sunRise = reader.GetAttribute("rise");
+            days[0].sunSet = reader.GetAttribute("set");
 
             //grabbing current temp
             reader.ReadToFollowing("temperature");
@@ -83,8 +89,7 @@ namespace XMLWeather
             days[0].conditionNumber = reader.GetAttribute("number");
             days[0].condition = reader.GetAttribute("value");
 
+
         }
-
-
     }
 }

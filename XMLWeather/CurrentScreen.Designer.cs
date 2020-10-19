@@ -48,11 +48,11 @@
             this.day3CondLabel = new System.Windows.Forms.Label();
             this.lowLabel = new System.Windows.Forms.Label();
             this.highLabel = new System.Windows.Forms.Label();
+            this.underlineLabel = new System.Windows.Forms.Label();
             this.day3Icon = new System.Windows.Forms.PictureBox();
             this.day2Icon = new System.Windows.Forms.PictureBox();
             this.day1Icon = new System.Windows.Forms.PictureBox();
             this.background = new System.Windows.Forms.PictureBox();
-            this.underlineLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.day3Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Icon)).BeginInit();
@@ -272,6 +272,16 @@
             this.highLabel.TabIndex = 61;
             this.highLabel.Text = "Hi";
             // 
+            // underlineLabel
+            // 
+            this.underlineLabel.BackColor = System.Drawing.Color.Transparent;
+            this.underlineLabel.ForeColor = System.Drawing.Color.White;
+            this.underlineLabel.Location = new System.Drawing.Point(291, 41);
+            this.underlineLabel.Name = "underlineLabel";
+            this.underlineLabel.Size = new System.Drawing.Size(226, 23);
+            this.underlineLabel.TabIndex = 62;
+            this.underlineLabel.Text = "_____________________________________________";
+            // 
             // day3Icon
             // 
             this.day3Icon.BackColor = System.Drawing.Color.Transparent;
@@ -311,16 +321,6 @@
             this.background.Size = new System.Drawing.Size(487, 705);
             this.background.TabIndex = 59;
             this.background.TabStop = false;
-            // 
-            // underlineLabel
-            // 
-            this.underlineLabel.BackColor = System.Drawing.Color.Transparent;
-            this.underlineLabel.ForeColor = System.Drawing.Color.White;
-            this.underlineLabel.Location = new System.Drawing.Point(291, 41);
-            this.underlineLabel.Name = "underlineLabel";
-            this.underlineLabel.Size = new System.Drawing.Size(226, 23);
-            this.underlineLabel.TabIndex = 62;
-            this.underlineLabel.Text = "_____________________________________________";
             // 
             // CurrentScreen
             // 

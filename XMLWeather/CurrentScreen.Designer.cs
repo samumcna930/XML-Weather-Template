@@ -114,7 +114,7 @@
             // 
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Yu Gothic UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minOutput.ForeColor = System.Drawing.Color.Aqua;
+            this.minOutput.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.minOutput.Location = new System.Drawing.Point(27, 248);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(105, 52);
@@ -197,7 +197,7 @@
             // clockTimer
             // 
             this.clockTimer.Enabled = true;
-            this.clockTimer.Interval = 1000;
+            this.clockTimer.Interval = 60000;
             this.clockTimer.Tick += new System.EventHandler(this.clockTimer_Tick);
             // 
             // tomorrowLabel
@@ -273,7 +273,7 @@
             // 
             // day1Icon
             // 
-            this.day1Icon.BackColor = System.Drawing.Color.Black;
+            this.day1Icon.BackColor = System.Drawing.Color.White;
             this.day1Icon.BackgroundImage = global::XMLWeather.Properties.Resources.CloudyIcon;
             this.day1Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.day1Icon.Location = new System.Drawing.Point(36, 528);

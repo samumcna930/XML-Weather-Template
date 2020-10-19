@@ -19,13 +19,30 @@ namespace XMLWeather
 
         public void displayForecast()
         {
-            //date1.Text = Form1.days[1].date;
-            //min1.Text = Form1.days[1].tempLow;
-            //max1.Text = Form1.days[1].tempHigh;
-
-            //date2.Text = Form1.days[2].date;
-            //min2.Text = Form1.days[2].tempLow;
-            //max2.Text = Form1.days[2].tempHigh;
+            int conditionNumber4 = Convert.ToInt32(Form1.days[4].conditionNumber);
+            if (conditionNumber4 == 800)
+            {
+                day3Icon.Image = Properties.Resources.SunnyIcon;
+                day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            ////rain conditions
+            //else if (conditionNumber3 < 600 && conditionNumber3 > 300)
+            //{
+            //    day3Icon.Image = Properties.Resources.RainIcon;
+            //    day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
+            //}
+            ////thunder conditions
+            //else if (conditionNumber3 > 200 && conditionNumber3 < 300)
+            //{
+            //    day3Icon.Image = Properties.Resources.ThunderStormIcon;
+            //    day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
+            //}
+            ////cloudy
+            //else if (conditionNumber3 > 800)
+            //{
+            //    day3Icon.Image = Properties.Resources.CloudyIcon;
+            //    day3Icon.BackgroundImageLayout = ImageLayout.Stretch;
+            //}
         }
 
         private void todayLabel_Click(object sender, EventArgs e)

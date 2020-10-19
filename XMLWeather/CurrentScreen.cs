@@ -43,6 +43,7 @@ namespace XMLWeather
         public void DisplayCurrent()
         {
             cityOutput.Text = Form1.days[0].location;
+
             //display current temp
             double currentTemp = Convert.ToDouble(Form1.days[0].currentTemp);
             tempOutput.Text = currentTemp.ToString("##") + "\u00B0" + "C";

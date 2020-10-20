@@ -314,7 +314,6 @@
             // background
             // 
             this.background.BackColor = System.Drawing.Color.Transparent;
-            this.background.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("background.BackgroundImage")));
             this.background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.background.Location = new System.Drawing.Point(0, 0);
             this.background.Name = "background";

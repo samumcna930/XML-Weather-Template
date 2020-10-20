@@ -84,7 +84,7 @@
             this.day1Label.BackColor = System.Drawing.Color.Transparent;
             this.day1Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day1Label.ForeColor = System.Drawing.Color.White;
-            this.day1Label.Location = new System.Drawing.Point(-12, 70);
+            this.day1Label.Location = new System.Drawing.Point(-5, 70);
             this.day1Label.Name = "day1Label";
             this.day1Label.Size = new System.Drawing.Size(299, 56);
             this.day1Label.TabIndex = 64;
@@ -95,7 +95,7 @@
             this.day2Label.BackColor = System.Drawing.Color.Transparent;
             this.day2Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day2Label.ForeColor = System.Drawing.Color.White;
-            this.day2Label.Location = new System.Drawing.Point(-12, 179);
+            this.day2Label.Location = new System.Drawing.Point(-5, 179);
             this.day2Label.Name = "day2Label";
             this.day2Label.Size = new System.Drawing.Size(299, 56);
             this.day2Label.TabIndex = 65;
@@ -106,7 +106,7 @@
             this.day3Label.BackColor = System.Drawing.Color.Transparent;
             this.day3Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day3Label.ForeColor = System.Drawing.Color.White;
-            this.day3Label.Location = new System.Drawing.Point(-10, 302);
+            this.day3Label.Location = new System.Drawing.Point(-5, 302);
             this.day3Label.Name = "day3Label";
             this.day3Label.Size = new System.Drawing.Size(299, 56);
             this.day3Label.TabIndex = 66;
@@ -117,7 +117,7 @@
             this.day4Label.BackColor = System.Drawing.Color.Transparent;
             this.day4Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day4Label.ForeColor = System.Drawing.Color.White;
-            this.day4Label.Location = new System.Drawing.Point(-10, 412);
+            this.day4Label.Location = new System.Drawing.Point(-5, 412);
             this.day4Label.Name = "day4Label";
             this.day4Label.Size = new System.Drawing.Size(299, 56);
             this.day4Label.TabIndex = 67;
@@ -128,7 +128,7 @@
             this.day5Label.BackColor = System.Drawing.Color.Transparent;
             this.day5Label.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day5Label.ForeColor = System.Drawing.Color.White;
-            this.day5Label.Location = new System.Drawing.Point(-10, 527);
+            this.day5Label.Location = new System.Drawing.Point(-5, 527);
             this.day5Label.Name = "day5Label";
             this.day5Label.Size = new System.Drawing.Size(299, 56);
             this.day5Label.TabIndex = 68;
